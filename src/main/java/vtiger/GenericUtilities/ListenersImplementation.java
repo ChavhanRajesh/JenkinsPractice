@@ -34,8 +34,7 @@ public class ListenersImplementation implements ITestListener
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
 		
-		String methodName = result.getMethod().getMethodName();
-		test.log(Status.PASS, methodName+"=== PASS ===");
+		String methodName = result.getMethod().getMethodName();		test.log(Status.PASS, methodName+"=== PASS ===");
 	}
 
 	public void onTestFailure(ITestResult result) {
