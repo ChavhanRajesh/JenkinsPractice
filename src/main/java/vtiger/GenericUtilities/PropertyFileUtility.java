@@ -22,8 +22,8 @@ public class PropertyFileUtility {
 		FileInputStream fis = new FileInputStream(IContantsUtility.propertyfilePath);
 		Properties pObj = new Properties();
 		pObj.load(fis);
-		String values = pObj.getProperty(key);
-		return values;
+		String value = pObj.getProperty(key);
+		return value;
 	}
 	
 
